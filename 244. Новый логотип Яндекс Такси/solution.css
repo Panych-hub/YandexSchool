@@ -1,0 +1,35 @@
+:root{
+    --yellowStart: #fcdd2e;
+    --yellowEnd: #fcb600;
+    --white: #f5f4f0;
+    --black: #000;
+}
+div {
+    height: 96px;
+    background-image: linear-gradient(145deg, var(--yellowStart), var(--yellowEnd));
+    border-top-right-radius: 36px;
+    border-top-left-radius: 36px;
+}
+
+div:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    left: 96px;
+    top:96px;
+    background-color: black;
+    border-bottom-right-radius: 36px;
+}
+
+div:after {
+    content: "";
+    background-image: linear-gradient(178deg, var(--black) 0px, transparent 7px);
+    opacity: 18%;
+    display: block;
+    width: 96px;
+    height: 96px;
+    background-color: var(--white);
+    border-bottom-left-radius: 36px;
+}
